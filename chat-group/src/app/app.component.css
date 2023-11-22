@@ -1,0 +1,74 @@
+.container-principal{
+    /* background-color: #c7ddeb; */
+    height: 100vh;
+    margin: 0px;
+}
+
+.tamanho-conversa{
+    max-height: 65vh;
+    overflow: auto;
+}
+.fala_direita{
+    margin: 0 auto; 
+    background: #fff;
+    font-size: 0.85em;
+    line-height: 1.6em;  
+    border-radius: 15px;
+    height: auto;
+    padding: 20px;
+    position: relative;
+    margin-top: 30px;
+
+}
+
+.fala_direita::after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    /*Faz seta "apontar para baixo. Definir o valor como 'top' fará ela "apontar para cima" */
+    /*Aqui entra a cor da "aba" do balão */
+    border-bottom: 20px solid #fff;
+    top: 19px; /*localização. Experimente alterar para 'bottom'*/
+    right: -17px;
+    transform: rotate(-0.40turn);
+    
+}
+.fala_esquerda{
+    margin: 0 auto; 
+    background: #fff;
+    font-size: 0.85em;
+    line-height: 1.6em;  
+    border-radius: 15px;
+    height: auto;
+    padding: 20px;
+    position: relative;
+    margin-top: 30px;
+
+
+}
+
+.fala_esquerda::after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    /*Faz seta "apontar para baixo. Definir o valor como 'top' fará ela "apontar para cima" */
+    /*Aqui entra a cor da "aba" do balão */
+    border-bottom: 20px solid #fff;
+    top: 19px; /*localização. Experimente alterar para 'bottom'*/
+    left: -17px;
+    transform: rotate(-0.95turn);
+    
+}
+
+.bg-gray{
+    background-color:#e9ecef; 
+  }
+.bg-gray-escuro{
+    background-color:#c6c8ca; 
+  }
